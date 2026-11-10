@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "nodenext",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "strict": true,
+    "noEmit": true,
+    "target": "es2025",
+    "rewriteRelativeImportExtensions": true,
+    "moduleResolution": "nodenext",
+    "types": ["node"]
+  },
+  "include": ["*.ts", "src/**/*.ts", "test/**/*.ts", "scripts/*.ts"]
+}

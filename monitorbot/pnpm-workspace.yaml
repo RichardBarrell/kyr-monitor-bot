@@ -1,0 +1,6 @@
+allowBuilds:
+  cpu-features: false
+  ssh2: true
+
+patchedDependencies:
+  discord.js: patches/discord.js.patch

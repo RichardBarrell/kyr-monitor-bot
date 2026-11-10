@@ -1,0 +1,13 @@
+diff --git a/src/client/Client.js b/src/client/Client.js
+index f73a70d1cebcd1371d8ce5c8df625fc93412525b..c14de0c84f94582218ed6da35fdc4d5f3a705ef8 100644
+--- a/src/client/Client.js
++++ b/src/client/Client.js
+@@ -529,7 +529,7 @@ class Client extends BaseClient {
+    * @private
+    */
+   _eval(script) {
+-    return eval(script);
++    throw new Error("WHY WOULD YOU PUT AN EVAL FUNCTION IN? DID YOU EAT TOO MUCH PAINT AS A CHILD?");
+   }
+ 
+   /**

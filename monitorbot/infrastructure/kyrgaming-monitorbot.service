@@ -1,0 +1,22 @@
+[Unit]
+Description=Monitor bot
+After=network-online.target
+# To avoid getting rate limited by Discord if the bot crashloops,
+# give up on restarts if it crashes 3 times in 10 minutes.
+StartLimitInterval=600
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=monitorbot
+WorkingDirectory=/home/monitorbot
+ExecStart=/home/monitorbot/.nvm/versions/node/v24.12.0/bin/node --no-warnings=ExperimentalWarning mb.js
+Restart=always
+RestartSec=5
+TimeoutStartSec=10
+Environment=NODE_ENV=production
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

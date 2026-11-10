@@ -1,0 +1,7 @@
+/dist
+/src/generated
+/sudoTarZst
+/var
+.env
+/node_modules
+/logs

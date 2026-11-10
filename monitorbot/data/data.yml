@@ -1,0 +1,5 @@
+botChannelId: "must set"
+guildId: "must set"
+
+defaultUnits:
+  - "postgresql.service"
